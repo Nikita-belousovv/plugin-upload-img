@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body{
+	background-color: #6434eb;
+	font-family: 'Roboto', sans-serif;
+}
+
+.container{
+	max-width: 800px;
+	padding: 15px 15px;
+	margin: 0 auto;
+}
+
+.card{
+	border-radius: 5px;
+	background-color: #fff;
+	padding: 1rem;
+}
+
+.btn{
+	background-color: #6434eb;
+	color: #fff;
+	border: none;
+	outline: none;
+	padding: 10px 35px;
+	font-size: 18px;
+	border-radius: 5px;
+	cursor: pointer;
+
+}
+
+.btn.primary{
+	border: 2px solid #6434eb;
+	color: #6434eb;
+	background-color: transparent;
+	padding: 8px 35px;
+	margin-left: .5rem;
+}
+
+.btn:active{
+	box-shadow: inset 1px 1px 1px rgba(100, 52, 235, 0.3);
+}
+
+.btn:hover{
+	opacity: 0.8;
+}
+
+input[type="file"] {
+	display: none;
+}
+
+.preview {
+	display: flex;
+	flex-wrap: wrap;
+	padding: .5rem;
+}
+
+.preview-image{
+	position: relative;
+	margin-bottom: .5rem;
+	margin-right: .5rem;
+	margin-top: .5rem;
+}
+
+.preview-image img {
+	max-width: 180px;
+	height: auto;
+}
+
+.preview-remove{
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	right: 0;
+	top: 0;
+	font-weight: bold;
+	background-color: rgba(255,255,255, .5);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	transition: all .25s
+}
+
+.preview-info{
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	font-size: .8rem;
+	background-color: rgba(255,255,255, .5);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	transition: bottom .25s;
+	padding: 7px 5px;
+}
+
+.preview-info span {
+	display: inline-block;
+}
+
+.preview-image.removing {
+	transform: scale(0);
+	transition: transform .3s;
+}
+
+.preview-info-progress{
+	position: absolute;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	background-color: #6434eb;
+	text-align: center;
+	transition: width .22s;
+	width: 30%;
+}

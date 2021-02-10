@@ -1,0 +1,22 @@
+{
+  "name": "appload_img",
+  "version": "1.0.0",
+  "description": "javascript, plugin",
+  "main": "index.js",
+  "scripts": {
+    "serve": "parcel index.html"
+  },
+  "keywords": [
+    "javascript",
+    "plugin"
+  ],
+  "author": "beloussovvv",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4",
+    "sass": "^1.32.6"
+  },
+  "dependencies": {
+    "firebase": "^8.2.6"
+  }
+}
